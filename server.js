@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const ApiRoute = require("./config/conf");
 var cors = require('cors')
 // const port = ApiRoute.port;
-const port = process.env.PORT_FRONT || 8080;
+const port = process.env.PORT || 8080;
 const getCovidRecord = require('./controller/get_covid_record/get_covid_record');
 const addCovidRecord = require('./controller/add_covid_record/add_covid_record')
 
